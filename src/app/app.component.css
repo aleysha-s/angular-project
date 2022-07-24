@@ -300,10 +300,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .expert_heading h1 {
+    position: absolute;
     color: #fff;
+    top: 65px;
+    left: 60px;
+}
+
+.expert_btn {
+    position: absolute;
+    right: -65px;
+    top: 78px;
 }
 
 .expert_btn_inner {
@@ -315,19 +325,27 @@
 }
 
 .cards {
-    margin-top: 6em;
+    min-height: 100vh;
+    margin-top: 10em;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 100px;
 }
 
 .card_detail span {
     color: #fff;
+    z-index: -1;
 }
 
 .card_detail p {
     color: #fff;
     font-weight: 500;
+    z-index: -1;
+}
+
+.card_detail {
+    position: absolute;
 }
 
 .card_detail p:hover {
@@ -342,4 +360,337 @@
     color: #fff;
     border: none;
     border-radius: 20px;
+    position: absolute;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+    cursor: pointer;
+    position: relative;
+}
+
+.card-1 {
+    margin-bottom: 63px;
+}
+
+.card-1:hover .card_overlay {
+    opacity: .7;
+}
+
+.card-2:hover .card_overlay {
+    opacity: .7;
+}
+
+.card-3:hover .card_overlay {
+    opacity: .7;
+}
+
+.card-4:hover .card_overlay {
+    opacity: .7;
+}
+
+.card_overlay {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .3) !important;
+    /* height: 226px; */
+    height: 100%;
+    /* width: 315px; */
+    width: 100%;
+    opacity: 0;
+    transition: .5s;
+}
+
+.icon-2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-20px, 20px);
+    background: orange;
+    /* height: 100%; */
+    padding: 12px;
+    border-radius: 20px;
+    /* width: 100%; */
+    overflow: hidden;
+}
+
+.icon-1 {
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    transform: translateX(-20px, 20px);
+    background: orange;
+    /* height: 100%; */
+    padding: 12px;
+    border-radius: 20px;
+    /* width: 100%; */
+    overflow: hidden;
+}
+
+/* fancy Text Section */
+
+#fancy-text {
+    position: relative;
+    background: #242424;
+}
+
+.fancy_img img {
+    height: auto;
+    width: 87%;
+}
+
+.fancy_details {
+    position: absolute;
+    left: 56%;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #fd7e14;
+    top: 17%;
+}
+
+.fancy_details h1 {
+    font-size: 3.2rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.fancy_details span {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.fancy_btn {
+    position: absolute;
+    bottom: 8rem;
+    left: 56rem;
+}
+
+.fancy_button {
+    background: #fd7e14;
+    border: none;
+    outline: none;
+    padding: 11px 50px;
+    border-radius: 26px;
+    color: #fff;
+    font-weight: 500;
+    transition: .2s;
+}
+
+.fancy_button:hover {
+    background: #fff;
+    color: #000;
+    border: 1px solid #fd7e14;
+
+}
+
+/* LED SECTION */
+#led {
+    height: 100vh;
+}
+
+.led_img-1 img {
+    border-radius: 50%;
+    height: 330px;
+    width: 330px;
+    position: absolute;
+    left: 215px;
+    top: 100px;
+}
+
+.counter {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter span {
+    position: absolute;
+    right: -84px;
+    bottom: -294px;
+}
+
+.counter span img {
+    height: 100px;
+}
+
+.counter span::after {
+    content: "";
+    position: absolute;
+    height: 43vh;
+    width: 44vh;
+    border-radius: 50%;
+    border: 5px solid #efefef;
+    left: -20px;
+    top: -102px;
+    bottom: 24px;
+}
+
+.right {
+    width: 100%;
+    height: 100%;
+    background: none;
+    position: absolute;
+    top: 12rem;
+    border: 5px solid #fd7e14;
+    left: 72%;
+    border-top-left-radius: 180px;
+    border-bottom-left-radius: 180px;
+    border-right: 0;
+    transform-origin: center right;
+}
+
+.led_details {
+    position: absolute;
+    top: 9rem;
+    right: 97px;
+}
+
+.led_details h5 {
+    color: #fd7e14;
+    font-weight: 500;
+}
+
+.led_details h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #414141;
+}
+
+.led_btn {
+    background: #000;
+    border: none;
+    transition: .5s;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px 53px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.led_btn:hover {
+    color: white;
+    font-weight: 500;
+    background: #fd7e14;
+}
+
+/* SLIDER SECTION */
+#slider {
+    height: 100vh;
+    background-color: rgba(253, 126, 20, .1);
+}
+
+.container_slider {
+    overflow: hidden;
+}
+
+.container_slider .slider {
+    animation: slidein 30s linear infinite;
+    white-space: nowrap;
+}
+
+.container_slider .slider .logos {
+    width: 100%;
+    display: inline-block;
+    margin: 0px 0;
+}
+
+.container_slider .slider .logos .fab {
+    width: calc(100% / 5);
+    animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
+
+@keyframes slidein {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* FOOTER SECTION */
+#footer {
+    background-color: #333;
+    color: #fff;
+    padding-bottom: 25px;
+}
+
+.footer_details {
+    width: 500px;
+    margin-left: 50px;
+}
+
+.footer_nav {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer_first {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    left: 9rem;
+    top: 6rem;
+}
+
+.footer_first li {
+    list-style: none;
+    line-height: 2;
+}
+
+.footer_first li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hr {
+
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    top: 54px;
+    height: 3px;
+}
+
+.footer_second {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 35px;
+    top: 6rem;
+    line-height: 2;
+}
+
+.footer_second li {
+    list-style: none;
+}
+
+#footer_end {
+    background-color: #2b2b2b;
+}
+
+.footer-para {
+    color: #fff;
+    text-align: center;
+    padding: 19px 16%;
 }
