@@ -28,8 +28,8 @@
             ],
             "scripts": [
               "./node_modules/bootstrap/dist/js/bootstrap.js",
-              "./node_modules/jquery/dist/jquery.js",
-              "src/app/app.js"
+              "./src/app/app.js",
+              "./node_modules/jquery/dist/jquery.js"
             ]
           },
           "configurations": {

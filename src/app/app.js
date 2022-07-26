@@ -1,6 +1,11 @@
-const header = document.getElementsByClassName('.header')
-if (pageYOffset == 15) {
-
-    header.style.postion = 'fixed'
-    header.style.top = '0'
+const burger = document.querySelector('.burger');
+const header = document.querySelector('.header');
+burger.onclick = () => {
+    header.classList.toggle('active')
 }
+
+addEventListener('scroll', () => {
+    if (window.pageYOffset > 10) {
+        alert('scrolling')
+    }
+})

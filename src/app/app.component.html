@@ -11,28 +11,31 @@
         </li>
     </ul>
 </header>
-<div class="header">
-    <div class="logo"><a href="#"><img [src]="logo" alt=""></a></div>
-    <div class="search_bar"><input type="text" placeholder="Enter Keyword or Manufacturer Product Id">
-        <div class="search_btn"><a href="#"><i class="bi bi-search text-white"></i></a></div>
-    </div>
-    <div class="header_nav">
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#"><i class="bi bi-cart text-white"></i> <span class="card_text">Cart </span>
-                    <span class="number">0</span></a></li>
 
-        </ul>
+<div class="sticky">
+    <div class="header">
+        <div class="logo"><a href="#"><img [src]="logo" alt=""></a></div>
+        <div class="search_bar"><input type="text" placeholder="Enter Keyword or Manufacturer Product Id">
+            <div class="search_btn"><a href="#"><i class="bi bi-search text-white"></i></a></div>
+        </div>
+        <div class="header_nav">
+            <ul>
+                <li><a href="#" class="hover">About</a></li>
+                <li><a href="#" class="hover">FAQs</a></li>
+                <li><a href="#"><i class="bi bi-cart text-white"></i> <span class="card_text">Cart </span>
+                        <span class="number">0</span></a></li>
+                <!-- <div class="burger"></div> -->
+            </ul>
+        </div>
     </div>
-</div>
-<div class="dropdown">
-    <div class="dropdown_card" (click)="callFun()">Shop By Category <i class="bi bi-arrow-down-short"></i></div>
+    <div class="dropdown">
+        <div class="dropdown_card">Shop By Category <i class="bi bi-arrow-down-short"></i></div>
+    </div>
 </div>
 <section id="hero">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6">
                 <div class="content_hero">
                     <h1>3M N95 PARTICULATE <br> RESPIRATOR SURGICAL <br> MASK</h1>
                     <div class="hero_details">
@@ -70,7 +73,7 @@
     <div class="cards">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-3">
                     <div class="card-1">
                         <img style="height:'226px';" [src]="expert_img_1" alt="">
                         <div class="card_overlay">
@@ -86,7 +89,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-3">
                     <div class="card-2"><img style="height:'226px';" [src]="expert_img_1" alt="">
                         <div class="card_overlay">
                             <span class="icon-1"><i class="bi bi-heart-fill text-white"></i></span>
@@ -101,7 +104,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-3">
                     <div class="card-3"><img style="height:'226px';" [src]="expert_img_1" alt="">
                         <div class="card_overlay">
                             <span class="icon-1"><i class="bi bi-heart-fill text-white"></i></span>
@@ -116,7 +119,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-3">
                     <div class="card-4"><img style="height:'226px';" [src]="expert_img_1" alt="">
                         <div class="card_overlay">
                             <span class="icon-1"><i class="bi bi-heart-fill text-white"></i></span>
@@ -136,7 +139,7 @@
             <br>
             <br>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-3">
                     <div class="card-1"><img style="height:'226px';" [src]="expert_img_1" alt="">
                         <div class="card_overlay">
                             <span class="icon-1"><i class="bi bi-heart-fill text-white"></i></span>
@@ -151,7 +154,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-3">
                     <div class="card-2"><img style="height:'226px';" [src]="expert_img_1" alt="">
                         <div class="card_overlay">
                             <span class="icon-1"><i class="bi bi-heart-fill text-white"></i></span>
@@ -166,7 +169,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-3">
                     <div class="card-3"><img style="height:'226px';" [src]="expert_img_1" alt="">
                         <div class="card_overlay">
                             <span class="icon-1"><i class="bi bi-heart-fill text-white"></i></span>
@@ -181,7 +184,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-3">
                     <div class="card-4"><img style="height:'226px';" [src]="expert_img_1" alt="">
                         <div class="card_overlay">
                             <span class="icon-1"><i class="bi bi-heart-fill text-white"></i></span>

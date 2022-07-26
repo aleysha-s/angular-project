@@ -44,6 +44,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #fff;
+    z-index: 9999;
+    overflow: hidden;
 }
 
 .header .logo a img {
@@ -91,6 +94,7 @@
     color: #121212;
     text-decoration: none;
     padding: 5px;
+    transition: .1s;
 }
 
 .header_nav ul :nth-child(3) {
@@ -120,11 +124,23 @@
     padding: 5px;
 }
 
+.header_nav {
+    margin-left: 50px;
+}
+
+.hover:hover {
+    color: #fd7e14 !important;
+
+}
+
 .dropdown {
     position: relative;
     margin-top: 4px;
     padding-bottom: 12px;
     border-bottom: 1px solid silver;
+    background: #fff;
+    z-index: 9999;
+    overflow: hidden;
 }
 
 .dropdown::after {
@@ -172,6 +188,43 @@
     left: 10px;
     bottom: 9px;
 }
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background: #ffff;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.burger::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    transform: translateY(-8px);
+    /* right: 50px; */
+}
+
+.burger {
+    position: relative;
+    cursor: pointer;
+}
+
+.burger::after {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: #000;
+    box-shadow: 0 -8px 0 0 black;
+    position: absolute;
+    transform: translateY(8px);
+    /* right: 50px; */
+}
+
+
+
 
 /* HERO SECTION */
 
@@ -693,4 +746,73 @@
     color: #fff;
     text-align: center;
     padding: 19px 16%;
+}
+
+
+/* ***** RESPONSIVE MEDIA QUERIES ***** */
+
+@media only screen and (max-width:768px) {
+    .card_text {
+        padding: 0px;
+    }
+
+    .header_nav {
+        margin-left: 0px;
+    }
+
+    .fancy_btn {
+        position: absolute;
+        bottom: 3rem;
+        left: 31rem;
+    }
+
+    .fancy_img {
+        height: auto;
+        width: 50%;
+        margin-top: 100px;
+    }
+
+    #fancy-text {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .cards {
+        display: block;
+        overflow: hidden;
+    }
+
+    .counter span {
+        position: absolute;
+        right: 0px;
+        bottom: -294px;
+    }
+
+    .counter span::after {
+        content: "";
+        position: absolute;
+        height: 43vh;
+        width: 48vh;
+        border-radius: 50%;
+        border: 5px solid #efefef;
+        left: -20px;
+        top: -102px;
+        bottom: 24px;
+    }
+
+    .led_img-1 img {
+        left: 0px;
+    }
+
+    .led_details {
+        position: absolute;
+        top: 27rem;
+        right: 110px;
+    }
+
+    #footer {
+        background-color: #333;
+        color: #fff;
+        padding-bottom: 218px;
+    }
 }

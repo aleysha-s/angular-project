@@ -1,11 +1,17 @@
 import { Component } from '@angular/core';
-declare const dropdown: any;
+import { UserdataService } from './userdata.service'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  users: any;
+  constructor(private userData: UserdataService) {
+    this.userData.userdata().subscribe((data) => {
+      console.warn('data', data)
+    })
+  }
   title = 'angularProject';
   logo: string = './assets/images/directmedsuppllies_highrestag-(1).png'
   hero_png: string = './assets/images/hero.png'
@@ -30,7 +36,4 @@ export class AppComponent {
   footer_insta: string = './assets/images/ins.png'
   footer_face: string = './assets/images/fb.png'
   footer_tweet: string = './assets/images/tw.png'
-  callFun() {
-    dropdown();
-  }
 }
