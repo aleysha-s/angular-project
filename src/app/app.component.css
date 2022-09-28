@@ -375,6 +375,7 @@
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
+    transition: .2s;
 }
 
 .cards {
@@ -538,6 +539,12 @@
     color: #000;
     border: 1px solid #fd7e14;
 
+}
+
+.expert_btn_inner:hover {
+    background: #fff;
+    color: black;
+    border: 2px solid #fd7e14;
 }
 
 /* LED SECTION */

@@ -1,0 +1,89 @@
+<section id="products">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="products_heading">
+                <div class="col-6">
+                    <h1>Featured Products</h1>
+                </div>
+                <div class="col-6">
+                    <div class="products_btn">
+                        <button>View all products</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 8rem ;">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="loop" *ngFor="let user of users; let i=index">
+                    <div *ngIf="i<2">
+                        <div class="box">
+                            <div class="img_over">
+                                <img [src]="expert_img_1" alt="">
+                               
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="box_details">
+                                <p>{{user.name}}</p>
+                                <p>{{user.id}}</p>
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="loop" *ngFor="let user of users; let i=index">
+                    <div *ngIf="i<2">
+                        <div class="box">
+                            <div class="img_over">
+                                <img [src]="expert_img_1" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="box_details">
+                                <p>{{user.name}}</p>
+                                <p>{{user.id}}</p>
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="loop" *ngFor="let user of users; let i=index">
+                    <div *ngIf="i<2">
+                        <div class="box">
+                            <div class="img_over">
+                                <img [src]="expert_img_1" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="box_details">
+                                <p>{{user.name}}</p>
+                                <p>{{user.id}}</p>
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="loop" *ngFor="let user of users; let i=index">
+                    <div *ngIf="i<2">
+                        <div class="box">
+                            <div class="img_over">
+                                <img [src]="expert_img_1" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="box_details">
+                                <p>{{user.name}}</p>
+                                <p>{{user.id}}</p>
+                                <button>Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
